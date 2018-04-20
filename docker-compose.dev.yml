@@ -1,0 +1,34 @@
+#####
+# Docker compose YAML file
+#
+# For documentation see: https://docs.docker.com/compose/yml/
+#####
+
+version: "3.3"
+
+services:
+    website:
+        build:
+            context: webapp
+            dockerfile: Dockerfile
+        expose:
+            - "80"
+        networks:
+            - web
+            - default
+        command: flask run --host=0.0.0.0 --port=80
+        environment:
+            - FLASK_APP=main.py
+            - FLASK_DEBUG=1
+        volumes:
+            - "./webapp/app:/app"
+        labels:
+            - "traefik.backend=dev.mr-awesome.com"
+            - "traefik.docker.network=web"
+            - "traefik.frontend.rule=Host:dev.mr-awesome.com"
+            - "traefik.enable=true"
+            - "traefik.port=80"
+
+networks:
+    web:
+        external: true
