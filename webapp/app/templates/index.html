@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Timothy Osborne - Portfolio{% endblock %}
+
+{% block canonical_url %}
+<link rel="canonical" href="">
+{% endblock %}
+
+{% block page_css %}
+{% endblock %}
+
+{% block page_js %}
+{% endblock %}
+
+{% block page_driver %}
+		<ul>
+				<li><a class="active" href="#top">Top</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+		</ul>
+{% endblock %}
+
+{% block body %}
+<div class="page active">
+		<div class="left">
+				<a style="display:none;" name="top"></a>
+				<h1>Tim Osborne</h1>
+				<img class="comet" src="{{ url_for('static', filename='images/comet2.svg') }}" alt="Comet">
+				<h2 class="title">Software Engineer</h2>
+		</div>
+		<div class="right">
+				<img class="solar-system" src="{{ url_for('static', filename='images/galaxy2.svg') }}" alt="solar_system">
+		</div>
+</div>
+
+
+<div class="page">
+		<div class="left">
+				<a style="display:none;" name="about"></a>
+				<h1>About Me</h1>
+				<h2>Passionate about tech</h2>
+				<a class="button" href="{{ url_for('aboutme') }}">Get to know me</a>
+		</div>
+		<div class="right">
+		</div>
+</div>
+
+<div class="page">
+		<div class="left">
+				<a style="display:none;" name="projects"></a>
+				<h1>Projects</h1>
+				<a class="button" href="{{ url_for('projects') }}">Learn More</a>
+		</div>
+		<div class="right">
+		</div>
+</div>
+
+<div class="page">
+		<div class="left">
+				<a style="display:none;" name="contact"></a>
+				<h1>Contact Me</h1>
+
+				<p>Offers, Chit Chat, or a simple 'Hello'</p>
+				<p>T.Osborne1215@gmail.com</p>
+				<div><!-- Link to linked in --></div>
+		</div>
+		<div class="right">
+		</div>
+</div>
+{% endblock %}

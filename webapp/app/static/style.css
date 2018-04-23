@@ -1,0 +1,163 @@
+
+body {
+	background: linear-gradient(#052147, #000b1e);
+	color: #eaf0f7;
+	overflow: hidden;
+}
+
+#page-container {
+
+}
+
+#page-driver {
+	height: 100%;
+	max-width: 250px;
+	z-index: 3;
+}
+
+#page-driver a:active,
+#page-driver a:hover,
+#page-driver a:link,
+#page-driver a:visited {
+	color: #28d384;
+    text-decoration: none;
+    padding-top: 50%;
+	padding-bottom: 50%;
+	left: 30%;
+	position: relative;
+}
+
+#page-driver ul {
+	list-style-type: none;
+	margin-top: 5em;
+    height: 40em;
+    display: table;
+}
+#page-driver ul li {
+    display: table-row;
+}
+#page-driver ul li:before {
+    float: left;
+    width: 20px;
+    font-size: 1.8em;
+    line-height: 0.75em;
+}
+#page-driver ul li a {
+}
+
+a.nav-link:link,
+a.nav-link:active,
+a.nav-link:hover,
+a.nav-link:visited {
+	text-decoration: none;
+	color: #eaf0f7 !important;	
+}
+
+.brand {
+	font-weight: bold;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.page.active {
+	display: initial;
+}
+
+.page > * {
+	position: relative;
+	top: 15%;
+	left: 15%;
+}
+.page h1 {
+	font-size: 4em;
+}
+
+div.page div.left {
+	z-index: 1;
+}
+
+div.page div.right {
+	z-index: -1;
+	position: relative;
+	top: -25%;
+	left: 55%;
+}
+
+.title {
+	font-style: italic;
+}
+
+.comet {
+	height: 75px;
+}
+@keyframes left {
+    0% {left: -75%;position:relative;}
+    100% {left: 15%;position:relative;}
+}
+
+@keyframes bottom {
+    0% {top: 75%;}
+    100% {top: -25%;}
+}
+
+.dial {
+	height: 25px;
+	z-index: 5;
+	position: absolute;
+	
+}
+
+.solar-system {
+	height: 40em;
+}
+
+.left {
+	animation-name: left;
+    animation-duration: 1s;
+}
+
+.right {
+	animation-name: bottom;
+	animation-duration: .90s;
+}
+
+a:active.button,
+a:hover.button,
+a:link.button,
+a:visited.button {
+	text-decoration: none;
+}
+.button {
+display: inline-block;
+font-size: 1.8rem;
+color: #fff;
+background: #28d384;
+line-height: 1;
+font-weight: bold;
+padding: 18px 32px;
+border-radius: 50px;
+-webkit-transition: .3s;
+-o-transition: .3s;
+transition: .3s;
+}
+
+# Proficiency Rankings
+.Basic {
+
+}
+
+.Intermediate {
+
+}
+
+.Advanced {
+
+}
+
+.Expert {
+
+}

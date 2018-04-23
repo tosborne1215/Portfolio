@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block page_driver %}
+    <ul>
+        <li><a class="active" href="#top">Top</a></li>
+        <li><a href="#passions">Passions</a></li>
+        <li><a href="#skills">Skills</a></li>
+    </ul>
+{% endblock %}
+
+{% block body %}
+<div class="page active">
+	<div class="left">
+		<a style="display:none;" name="top"></a>
+		<h1>Hi, I'm Tim</h1>
+		<p>I've been developing software for over 7 years.</p>
+	</div>
+	<div class="right">
+	</div>
+</div>
+
+<div class="page">
+	<div class="left">
+		<a style="display:none;" name="passions"></a>
+		<h1>Passions</h1>
+		<p>Technology and Science</p>
+	</div>
+	<div class="right">
+	</div>
+</div>
+
+<div class="page">
+	<div class="left">
+		<a style="display:none;" name="skills"></a>
+		<h1>Skills</h1>
+		<p>My experience has allowed me to work with many languages and concepts.</p>
+		<ul>
+			<li>Programming <span class="Basic"></span></li>
+			<li>Programming <span class="Intermediate"></span></li>
+			<li>Programming <span class="Advanced"></span></li>
+			<li>Programming <span class="Expert"></span></li>
+		</ul>
+	</div>
+	<div class="right">
+	</div>
+</div>
+{% endblock %}

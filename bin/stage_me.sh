@@ -12,7 +12,7 @@ rm -f /tmp/Portfolio.$TAG.tar.gz
 git clone . /tmp/Portfolio/
 
 # checkout tag
-cd /tmp/ColdOnesStaging/
+cd /tmp/PortfolioStaging/
 git checkout tags/$TAG
 
 # Zip Clone
@@ -22,5 +22,5 @@ tar -czvf /tmp/Portfolio.$TAG.tar.gz .
 scp /tmp/Portfolio.$TAG.tar.gz vultr.staging.portfolio:/tmp/
 
 # on host:
-# unpack contents into directory with name ColdOnes-$TAG
+# unpack contents into directory with name Portfolio-$TAG
 ssh -t root@vultr.staging.portfolio "mkdir ~/Portfolio-$TAG && tar -xvzf /tmp/Portfolio.$TAG.tar.gz -C ~/Portfolio-$TAG"
