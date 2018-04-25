@@ -66,6 +66,7 @@
 		{% endblock %}
 
 		<script>
+			// the dial object controls the right menu bar which is used to navigate internally
 			var dialObj = {
 				dial: null,
 				dest: null,
@@ -75,8 +76,9 @@
 					this.dest = dest
 					this.dial.style.top = $(dialObj.dest).position().top + ($(dialObj.dest).outerHeight() / 2) - ($(dialObj.dial).innerHeight() / 2) + 'px';
 				},
+				// make 20 steps to the center of the destination element.
+				// take the midpoint of the dest and the midpoint of the dial to line them up
 				animate: function(timestamp) {
-					//how many pixels do I need to move?
 					var dialTop = $(dialObj.dial).position().top;
 					var destTop = $(dialObj.dest).position().top + ($(dialObj.dest).outerHeight() / 2) - ($(dialObj.dial).innerHeight() / 2);
 					var difference = (dialTop - destTop) / 20;
@@ -99,7 +101,8 @@
 
 					dialObj.currentAnimation = window.requestAnimationFrame(dialObj.animate);
 				}
-			}
+			};
+
 			var hammertime = new Hammer(document);
 			hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
 
@@ -112,6 +115,7 @@
 
 			
 			$(function() {
+				//the dial object needs the dial image ele and the active link
 				dialObj.init($('.dial')[0], $('#page-driver ul li a.active')[0]);
 
 				$('#page-driver ul li a').on("click", function(event) {
@@ -150,7 +154,6 @@
 			<div class="row sticky-top">
 				<div class="col">
 					<nav class="navbar navbar-expand-lg navbar-light">
-
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
@@ -158,18 +161,17 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li class="nav-item active">
-									<a class="nav-link ice-font-button" href="{{ url_for("index") }}"><span class="brand">Timothy Osborne</span></a>
+									<a class="nav-link" href="{{ url_for("index") }}"><span class="brand">Timothy Osborne</span></a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item d-lg-none">
 									<a class="nav-link" href="{{ url_for("aboutme") }}">About</a>
 								</li>
-								<li class="nav-item">
+								<li class="nav-item d-lg-none">
 									<a class="nav-link" href="{{ url_for("projects") }}">Projects</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#contactme">Contact</a>
+								<li class="nav-item d-lg-none">
+									<a class="nav-link" href="{{ url_for("contact") }}">Contact</a>
 								</li>
-								
 							</ul>
 						</div>
 					</nav>
@@ -186,7 +188,7 @@
 
 				<!-- basically a menu, but pretty -->
 				<div id="page-driver" class="col">
-					<img class="dial" src="{{ url_for('static', filename='images/dial2.svg') }}" alt="dial">
+					<img class="dial" src="{{ url_for('static', filename='images/dial.svg') }}" alt="dial">
 					{% block page_driver %}
 					{% endblock %}
 				</div>
