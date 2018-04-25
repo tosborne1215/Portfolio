@@ -19,8 +19,8 @@ git checkout tags/$TAG
 tar -czvf /tmp/Portfolio.$TAG.tar.gz .
 
 # scp Clone to vultr.staging.portfolio:/tmp/
-scp /tmp/Portfolio.$TAG.tar.gz vultr.staging.portfolio:/tmp/
+scp /tmp/Portfolio.$TAG.tar.gz vultr.staging.coldones:/tmp/
 
 # on host:
 # unpack contents into directory with name Portfolio-$TAG
-ssh -t root@vultr.staging.portfolio "mkdir ~/Portfolio-$TAG && tar -xvzf /tmp/Portfolio.$TAG.tar.gz -C ~/Portfolio-$TAG"
+ssh -t root@vultr.staging.coldones "mkdir ~/Portfolio-$TAG && tar -xvzf /tmp/Portfolio.$TAG.tar.gz -C ~/Portfolio-$TAG"

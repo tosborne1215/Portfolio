@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block page_driver %}
+    <ul>
+        <li><a class="active" href="#top">Top</a></li>
+    </ul>
+{% endblock %}
+
+{% block body %}
+<div class="page active">
+	<div class="left">
+		<a style="display:none;" name="top"></a>
+		<h1>Contact me</h1>
+		<p>I've been developing software for over 7 years.</p>
+	</div>
+	<div class="right">
+	</div>
+</div>
+
+<div class="page">
+	<div class="left">
+		<a style="display:none;" name="passions"></a>
+		<h1>Passions</h1>
+		<p>Technology and Science</p>
+	</div>
+	<div class="right">
+	</div>
+</div>
+{% endblock %}

@@ -17,9 +17,9 @@ services:
             - web
             - default
         labels:
-            - "traefik.backend=dev.mr-awesome.com"
+            - "traefik.backend=staging.timothy-osborne.com"
             - "traefik.docker.network=web"
-            - "traefik.frontend.rule=Host:dev.mr-awesome.com"
+            - "traefik.frontend.rule=Host:staging.timothy-osborne.com"
             - "traefik.enable=true"
             - "traefik.port=80"
 

@@ -5,6 +5,14 @@ README
 
 Citations:
 
+docker
+
+nginx
+
+Flask
+
+bootstrap4
+
 Hammer.js - Used to add swipe functionality
 
 <text x="0" y="71" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Prettycons</text><text x="0" y="76" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
