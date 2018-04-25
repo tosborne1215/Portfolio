@@ -1,1 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 62.5" enable-background="new 0 0 50 50" xml:space="preserve"><g><path fill="#000000" d="M30.367,14.655L4.146,0.96l7.404,28.506c-0.058,0.573-0.174,1.135-0.174,1.729   c0,9.242,7.518,16.767,16.761,16.767c9.244,0,16.762-7.524,16.762-16.767C44.902,22.712,38.554,15.76,30.367,14.655z M10.724,9.235   l11.889,6.207c-3.556,1.255-6.565,3.632-8.572,6.755L10.724,9.235z M28.142,43.676c-6.879,0-12.475-5.6-12.475-12.48   c0-6.881,5.596-12.476,12.475-12.476c0.317,0,0.618,0.071,0.929,0.091l0,0l0,0c6.438,0.486,11.548,5.822,11.548,12.385   C40.618,38.076,35.022,43.676,28.142,43.676z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="42.816982mm"
+   height="11.882659mm"
+   viewBox="0 0 151.71372 42.10391"
+   id="svg4140"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dial2.svg">
+  <defs
+     id="defs4142">
+    <symbol
+       id="Terminal">
+      <title
+         id="title5090">Terminal/Interrupt</title>
+      <desc
+         id="desc5092">A terminal point in a flowchart: start, stop, halt, etc.</desc>
+      <path
+         d="m 35,95 a 20,20 0 0 1 0,-40 l 80,0 a 20,20 0 0 1 0,40 z"
+         style="stroke-width:2"
+         id="path5094"
+         inkscape:connector-curvature="0" />
+    </symbol>
+    <symbol
+       id="Offpage">
+      <title
+         id="title5139">Off-Page Connector</title>
+      <desc
+         id="desc5141">Exit to or entry from a page. (IBM)</desc>
+      <path
+         d="M 55,55 95,55 95,85 75,105 55,85 Z"
+         style="stroke-width:2"
+         id="path5143"
+         inkscape:connector-curvature="0" />
+    </symbol>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8889">
+      <rect
+         style="fill:#b7e8f4;fill-opacity:1"
+         id="rect8891"
+         width="156.96033"
+         height="48.096577"
+         x="151.01289"
+         y="456.66626" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.468877"
+     inkscape:cx="61.950098"
+     inkscape:cy="15.764917"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="3200"
+     inkscape:window-height="1767"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4145">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-142.68379,-443.97511)"
+     style="display:inline;opacity:1">
+    <path
+       style="opacity:1;fill:#a7f9f8;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       d="M 32.839844,4.8671875 A 18.100863,17.066526 0 0 0 14.740234,21.933594 18.100863,17.066526 0 0 0 32.839844,39 18.100863,17.066526 0 0 0 41.726562,36.779297 L 93.865234,23.744141 43.501953,8.1660156 A 18.100863,17.066526 0 0 0 32.839844,4.8671875 Z"
+       transform="translate(142.68379,443.97511)"
+       id="path8978"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
