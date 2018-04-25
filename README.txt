@@ -1,23 +1,33 @@
-README
+# README
 
+## Libraries, Tools
+- Hammer.js
 
+Added the swipe functionality to make the design work with mobile devices
 
+- nginx
 
-Citations:
+Serves static content and routes requests to uwsgi
 
-docker
+- uwsgi
 
-nginx
+- docker
 
-Flask
+Containerization is the greatest invention ever.
 
-bootstrap4
+- Flask
 
-Hammer.js - Used to add swipe functionality
+Lightweight Python web framework
 
-<text x="0" y="71" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Prettycons</text><text x="0" y="76" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+- bootstrap4
 
-<text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Calvin Ng</text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+Great for layout on the front end
 
-<text x="0" y="65" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Luboš Volkov</text><text x="0" y="70" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
-Galaxy by Marvdrock from the Noun Project
+## Images, Artwork, CSS
+- comet.svg
+
+Created by Calvin Ng from the Noun Project
+
+- galaxy.svg
+
+Created by Marvdrock from the Noun Project
