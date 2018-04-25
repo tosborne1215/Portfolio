@@ -24,7 +24,7 @@
 {% block body %}
 <div class="page active">
 		<div class="left">
-				<a style="display:none;" name="top"></a>
+				<a class="d-none" name="top"></a>
 				<h1>Tim Osborne</h1>
 				<img class="comet" src="{{ url_for('static', filename='images/comet.svg') }}" alt="Comet">
 				<h2 class="title">Software Engineer</h2>
@@ -37,9 +37,9 @@
 
 <div class="page">
 		<div class="left">
-				<a style="display:none;" name="about"></a>
+				<a class="d-none" name="about"></a>
 				<h1>About Me</h1>
-				<h2>Passionate about tech</h2>
+				<h2>Experienced, Driven, Innovative</h2>
 				<a class="button" href="{{ url_for('aboutme') }}">Get to know me</a>
 		</div>
 		<div class="right">
@@ -48,8 +48,9 @@
 
 <div class="page">
 		<div class="left">
-				<a style="display:none;" name="projects"></a>
+				<a class="d-none" name="projects"></a>
 				<h1>Projects</h1>
+				<p>Many of my projects have been proprietary, but you can check out some of my personal projects.</p>
 				<a class="button" href="{{ url_for('projects') }}">Learn More</a>
 		</div>
 		<div class="right">
@@ -58,12 +59,12 @@
 
 <div class="page">
 		<div class="left">
-				<a style="display:none;" name="contact"></a>
+				<a class="d-none" name="contact"></a>
 				<h1>Contact Me</h1>
 
-				<p>Offers, Chit Chat, or a simple 'Hello'</p>
+				<p>For both business and leisure, I can be reached at the email address below. You can also find me on LinkedIn.</p>
 				<p>T.Osborne1215@gmail.com</p>
-				<div><!-- Link to linked in --></div>
+				<div><!-- Link to social media --></div>
 		</div>
 		<div class="right">
 		</div>

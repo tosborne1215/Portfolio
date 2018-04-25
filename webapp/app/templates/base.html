@@ -116,32 +116,34 @@
 			
 			$(function() {
 				//the dial object needs the dial image ele and the active link
-				dialObj.init($('.dial')[0], $('#page-driver ul li a.active')[0]);
+				if ($('.dial').length != 0) {
+					dialObj.init($('.dial')[0], $('#page-driver ul li a.active')[0]);
 
-				$('#page-driver ul li a').on("click", function(event) {
-					var current  = $('.page.active').removeClass('active');
-					$('#page-driver ul li a.active').removeClass('active');
-					$(this).addClass('active')
+					$('#page-driver ul li a').on("click", function(event) {
+						var current  = $('.page.active').removeClass('active');
+						$('#page-driver ul li a.active').removeClass('active');
+						$(this).addClass('active')
 
-					if (current.length == 0) {
-						current = $('.page').first();
-					}
+						if (current.length == 0) {
+							current = $('.page').first();
+						}
 
-					$(current).removeClass('active');
-					var dest = $(this).attr('href');
+						$(current).removeClass('active');
+						var dest = $(this).attr('href');
 
-					//used for animation
-					dialObj.animateTo(this)
-					$("[name="+dest.substring(1, dest.length)+"]").parents('.page').addClass('active');
-				});
-				$(document).keyup(function (event){
-					if (event.which == 40) {
-						$('a.active').parent().next().children('a').trigger("click");
-					}
-					if (event.which == 38) {
-						$('a.active').parent().prev().children('a').trigger("click");
-					}
-				});
+						//used for animation
+						dialObj.animateTo(this)
+						$("[name="+dest.substring(1, dest.length)+"]").parents('.page').addClass('active');
+					});
+					$(document).keyup(function (event){
+						if (event.which == 40) {
+							$('a.active').parent().next().children('a').trigger("click");
+						}
+						if (event.which == 38) {
+							$('a.active').parent().prev().children('a').trigger("click");
+						}
+					});
+				}
 			});
 			
 		</script>
@@ -153,23 +155,26 @@
 		<div class="container-fluid">
 			<div class="row sticky-top">
 				<div class="col">
-					<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="nav-link" href="{{ url_for("index") }}"><span class="brand">Timothy Osborne</span></a>
+				</div>
+				<div class="col">
+					<nav class="navbar navbar-dark">
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active">
-									<a class="nav-link" href="{{ url_for("index") }}"><span class="brand">Timothy Osborne</span></a>
+								<li class="nav-item">
+									<a class="nav-link" href="{{ url_for("index") }}">Home</a>
 								</li>
-								<li class="nav-item d-lg-none">
+								<li class="nav-item">
 									<a class="nav-link" href="{{ url_for("aboutme") }}">About</a>
 								</li>
-								<li class="nav-item d-lg-none">
+								<li class="nav-item">
 									<a class="nav-link" href="{{ url_for("projects") }}">Projects</a>
 								</li>
-								<li class="nav-item d-lg-none">
+								<li class="nav-item">
 									<a class="nav-link" href="{{ url_for("contact") }}">Contact</a>
 								</li>
 							</ul>
@@ -187,9 +192,14 @@
 				</div>
 
 				<!-- basically a menu, but pretty -->
-				<div id="page-driver" class="col">
+				<div id="page-driver" class="d-none d-md-block col-2">
+					{% block page_driver_icon %}
 					<img class="dial" src="{{ url_for('static', filename='images/dial.svg') }}" alt="dial">
+					{% endblock %}
 					{% block page_driver %}
+					<ul>
+				        <li><a class="active" href="#top">Top</a></li>
+				    </ul>
 					{% endblock %}
 				</div>
 			</div>

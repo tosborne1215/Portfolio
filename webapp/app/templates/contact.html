@@ -1,27 +1,20 @@
 {% extends "base.html" %}
 
+{# Disabled the page driver #}
+{% block page_driver_icon %}
+{% endblock %}
 {% block page_driver %}
-    <ul>
-        <li><a class="active" href="#top">Top</a></li>
-    </ul>
 {% endblock %}
 
 {% block body %}
 <div class="page active">
 	<div class="left">
-		<a style="display:none;" name="top"></a>
-		<h1>Contact me</h1>
-		<p>I've been developing software for over 7 years.</p>
-	</div>
-	<div class="right">
-	</div>
-</div>
+		<a class="d-none" name="contact"></a>
+		<h1>Contact Me</h1>
 
-<div class="page">
-	<div class="left">
-		<a style="display:none;" name="passions"></a>
-		<h1>Passions</h1>
-		<p>Technology and Science</p>
+		<p>For both business and leisure, I can be reached at the email address below. You can also find me on LinkedIn.</p>
+		<p>T.Osborne1215@gmail.com</p>
+		<div><!-- Link to social media --></div>
 	</div>
 	<div class="right">
 	</div>

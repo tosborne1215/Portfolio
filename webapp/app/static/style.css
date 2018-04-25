@@ -1,4 +1,6 @@
-
+html, body {
+	height: 100%;
+}
 body {
 	background: linear-gradient(#052147, #000b1e);
 	color: #eaf0f7;
@@ -11,8 +13,9 @@ body {
 
 #page-driver {
 	height: 100%;
-	max-width: 250px;
 	z-index: 3;
+	min-width: 10em;
+	background: linear-gradient(rgba(5,33,71,0.5), rgba(0,11,30,0.5));
 }
 
 #page-driver a:active,
@@ -32,6 +35,7 @@ body {
 	margin-top: 5em;
     height: 40em;
     display: table;
+    min-width: 6em;
 }
 #page-driver ul li {
     display: table-row;
@@ -43,6 +47,9 @@ body {
     line-height: 0.75em;
 }
 #page-driver ul li a {
+	z-index: 6;
+	display:block;
+	opacity: .9;
 }
 
 a.nav-link:link,
@@ -118,6 +125,7 @@ div.page div.right {
 .left {
 	animation-name: left;
     animation-duration: 1s;
+    width: 75%;
 }
 
 .right {
@@ -132,32 +140,71 @@ a:visited.button {
 	text-decoration: none;
 }
 .button {
-display: inline-block;
-font-size: 1.8rem;
-color: #fff;
-background: #28d384;
-line-height: 1;
-font-weight: bold;
-padding: 18px 32px;
-border-radius: 50px;
--webkit-transition: .3s;
--o-transition: .3s;
-transition: .3s;
+	display: inline-block;
+	font-size: 1.8rem;
+	color: #fff;
+	background: #28d384;
+	line-height: 1;
+	font-weight: bold;
+	padding: 18px 32px;
+	border-radius: 50px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
 }
 
-# Proficiency Rankings
 .Basic {
-
+	width: 25%;
 }
 
 .Intermediate {
-
+	width: 50%;
 }
 
 .Advanced {
-
+	width: 75%;
 }
 
 .Expert {
+	width: 100%;
+}
 
+.Skill {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 2em;
+    color: white;
+    background-color: #28d384;
+    border-radius: 25px;
+}
+
+.Skill > span {
+	text-align: left;
+	padding-left: 1em;
+	font-weight: bold;
+	float: left;
+}
+
+.skill-list {
+	list-style-type: none;
+}
+
+.skill-list > li {
+	background-color: #ddd;
+	width: 100%;
+	margin: .5em;
+	border-radius: 25px;
+}
+
+.navbar-toggler {
+	position: absolute;
+	top: -25px;
+	right: 0px;
+}
+
+.navbar {
+	float: right;
+	position:relative;
+	top: 30px;
+	min-width: 10em;
 }
