@@ -1,5 +1,7 @@
 # README
 
+You can see this website in action at http://timothy-osborne.com/
+
 ## Libraries, Tools
 - Hammer.js
 
