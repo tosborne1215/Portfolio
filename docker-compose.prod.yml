@@ -1,0 +1,28 @@
+#####
+# Docker compose YAML file
+#
+# For documentation see: https://docs.docker.com/compose/yml/
+#####
+
+version: "3.3"
+
+services:
+    website:
+        build:
+            context: webapp
+            dockerfile: Dockerfile
+        expose:
+            - "80"
+        networks:
+            - web
+            - default
+        labels:
+            - "traefik.backend=timothy-osborne.com"
+            - "traefik.docker.network=web"
+            - "traefik.frontend.rule=Host:timothy-osborne.com"
+            - "traefik.enable=true"
+            - "traefik.port=80"
+
+networks:
+    web:
+        external: true
